@@ -60,7 +60,12 @@ Unfortunately, you can't use with swagger easyly, use Postman
 - Don't support earlier .Net (<.Net 5)
 - header needed
 
-## Screen Shots
+# Screen Shots
+## German
 ![German](Screenshot_1.png)
+
+## Türkçe
 ![Türkçe](Screenshot_2.png)
+
+## Default
 ![Default](Screenshot_3.png)
