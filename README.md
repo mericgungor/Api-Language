@@ -59,3 +59,8 @@ Unfortunately, you can't use with swagger easyly, use Postman
 - less performance
 - Don't support earlier .Net (<.Net 5)
 - header needed
+
+## Screen Shots
+![German](Screenshot_1.png)
+![Türkçe](Screenshot_2.png)
+![Default](Screenshot_3.png)
