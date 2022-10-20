@@ -33,11 +33,11 @@ Türkçeye<br/>
 ## Kurulum
 
 Api kodunuzu yazın<br/>
-Languages.cs kopyalayın, kendi alanlarınıza göre değiştirin.<br/>
 LocalizationMiddleware.cs kopyalayın, bir değişiklik yapmanıza gerek yok.<br/>
 <br/>
 program.cs içinde<br/>
 Eğer bütün api metodlarınızda geçerli olmasını istiyorsanız, bu kullanın<br/>
+
 ```
     app.UseMiddleware<LocalizationMiddleware>();
 ```
@@ -50,7 +50,7 @@ app.UseWhen(context => context.Request.Path.StartsWithSegments("/WeatherForecast
 ```
 api header değer atayın<br/>
 ```
---header 'Api-Language: de'
+--header 'Accept-Language: de-DE'
 ```
 Maalesef, swagger'ı kolayca kullanamazsınız, Postman kullanın.<br/>
 
@@ -61,13 +61,13 @@ Maalesef, swagger'ı kolayca kullanamazsınız, Postman kullanın.<br/>
 
 # Ekran Görüntüleri
 ## Almanca
-![German](Screenshot_1.png)
+![German](Screenshot_de.png)
 
 ## Türkçe
-![Türkçe](Screenshot_2.png)
+![Türkçe](Screenshot_tr.png)
 
 ## Default
-![Default](Screenshot_3.png)
+![Default](Screenshot_default.png)
 
 ***
 
@@ -107,11 +107,11 @@ to (türkçe)<br/>
 ## Installation & Using
 
 Write your api code.<br/>
-Copy Languages.cs, modify your language,your fields.<br/>
 Copy LocalizationMiddleware.cs, don't change any thing.<br/>
 <br/>
 in program.cs<br/>
 if you want to apply to all api, use this<br/>
+
 ```
     app.UseMiddleware<LocalizationMiddleware>();
 ```
@@ -124,9 +124,9 @@ app.UseWhen(context => context.Request.Path.StartsWithSegments("/WeatherForecast
 ```
 Set api header<br/>
 ```
---header 'Api-Language: de'
+--header 'Accept-Language: de-DE'
 ```
-Unfortunately, you can't use with swagger easyly, use Postman<br/>
+Unfortunately, you can't use with swagger easily, use Postman instead<br/>
 
 ## Warnings
 - less performance
@@ -135,10 +135,10 @@ Unfortunately, you can't use with swagger easyly, use Postman<br/>
 
 # Screen Shots
 ## German
-![German](Screenshot_1.png)
+![German](Screenshot_de.png)
 
 ## Türkçe
-![Türkçe](Screenshot_2.png)
+![Türkçe](Screenshot_tr.png)
 
 ## Default
-![Default](Screenshot_3.png)
+![Default](Screenshot_default.png)

@@ -1,3 +1,4 @@
+using System.Globalization;
 using WebApi.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,10 +7,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
+builder.Services.AddLocalizationOptions(); // Required to initialize languages 
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+app.UseRequestLocalization(); // Required to initialize request localization
 
+// Configure the HTTP request pipeline.
 app.UseAuthorization();
 
 app.MapControllers();
